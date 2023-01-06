@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+ 
+
+   :root {
+
+    --main-color--: 						 white;   
+  
+--black-color--: #1d1b1b ; 
+ --border: 0.1rem solid rgba(255,255,255,0.4); 
+
+}
+
+
+
+*{
+    font-family:  "Poppins" , sans-serif;
+    margin: 0 ;
+ padding: 0 ;
+box-sizing: border-box;
+outline: none ;
+border: none ;
+text-decoration: none;
+text-transform: capitalize;
+transition: 0.2 ease ;
+/*! BASE HTML KODLARI   */
+}
+
+html{
+    font-size:62.5%;
+overflow-x: hidden;
+scroll-padding-top: 9rem;
+scroll-behavior: smooth; 
+}
+
+html::-webkit-scrollbar{
+width: 9px;
+background-color: white;
+}    html::-webkit-scrollbar-thumb{
+  width: 9px;
+  background-color: black;
+ 
+} 
+
+/*! Header kodları */
+.header 
+.logo img{  
+    height: 7rem
+}
+
+ body{
+    background-color: var(--main-color--);
+     max-height: 4500px;
+}
+section{
+padding: 35px  3%;
+ }
+.btn{
+  margin-top: 1rem;
+display: inline-block;
+padding: 16px 32px;
+ border-radius: 10px;
+font-size: 13px;
+cursor: pointer;
+color:rgb(17, 166, 235) ;
+background-color: rgb(0, 0, 0);
+ font-weight: 700;
+ 
+}
+
+.header{
+ border: 1px;
+ border-radius: 10px;
+background-color: white;
+font-size: 20px;
+display: flex;  
+align-items: center;   
+justify-content: space-between;    
+padding: 0 2.8%;     
+margin: 2rem 7% ;   
+box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75 ) ;
+position: sticky ;
+top: 0 ;
+z-index: 1000;
+} 
+.header .navbar a   {
+margin: 0 1rem ;
+font-size: 16px;
+color:black ;
+border-bottom:1.2px solid transparent  ;
+ }
+ .header .navbar a:hover{
+     
+   border-color: #499da3;
+ padding-bottom: 5px;
+}
+
+  .header .buttons button{
+cursor: pointer;
+font-size: 20px;
+background-color: white;
+ }
+ 
+
+
+
+
+
+ .home{ 
+  background: url(personel12.jpg)no-repeat;
+    background-size:  cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top:   -11.8rem;
+  display: flex;
+  align-items: center;
+  }  
+  
+  .home .content{
+  max-width: 60rem;
+  
+  }
+  .home .content h1{
+  font-size: 45px;
+  color: black;
+   
+}
+  .home .content p{
+    font-size: 17px;
+  color: black;
+  font-weight: 600;
+  line-height: 1.8;
+  padding: 1rem 0;
+  padding-bottom: 10%;   
+}
+
+
+.menu .box-container{
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 15px;
+}
+.menu .box-container .box{
+  padding: 3rem;
+background-color: rgb(126, 182, 192);
+ border-radius: 10px;
+background-color: rgb(126, 182, 192);
+min-height: 350px ;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+  }
+
+
+
+
+.menu .box-container .box img{
+width: 100%;
+object-fit: cover;
+
+}
+ 
+.menu .box-container .box h3{
+font-size: 17px;
+
+}
+
+
+.menu .box-container .box  p{ 
+font-size: 15px;
+}
+
+.menu h1{
+text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+padding-left: 3%;
+margin-bottom: 20px;
+border-bottom: 3px solid black;
+ }
+.baslik{
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+padding-left: 3%;
+margin-bottom: 20px;
+border-bottom: 3px solid black;
+  
+}
+
+.bizkimiz .baslik .box-container .box  h1{ 
+font-size: 30px;
+ } 
+ .bizkimiz{ 
+  background: url(1212.jpg)no-repeat;
+    height: auto;
+  background-size:  cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: 1.6%;
+  display: flex;
+  align-items: center;
+   
+}  
+.bizkimiz .bizkimiz2{
+  max-width: 60rem;
+  
+  }
+  .bizkimiz .bizkimiz2 h1{
+  font-size: 40px;
+  color: black;
+  position: relative  ;
+  right: -700px ;
+   top: -150px;
+
+}
+  .bizkimiz .bizkimiz2 p{
+    font-size: 17px;
+  color: black;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 1rem 0;
+ position: relative  ;
+ right: -700px;
+top: -100px;
+}  
+  
+
+
+.referans h1{
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+padding-left: 0%;
+margin-bottom: 20px;
+border-bottom: 3px solid black;
+}
+
+
+
+.referans .box-container2{
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 15px;
+}
+.referans .box-container2  .box2 img{
+width: 100%;
+object-fit: cover;
+ height: 450px;
+}
+.referans .box-container2 .box2{
+padding: 30px;
+background-color:  rgb(126, 182, 192);
+min-height: 600px;
+}
+.referans h3{
+font-size: 18px;
+
+}
+
+.btn2{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 10px 18px;
+   border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color:white  ;
+  background-color: rgb(207, 69, 69);
+}
+
+ 
+  .hepsinigor{
+    margin-top: 1rem;
+  display: inline-block;
+  padding: 10px 18px;
+  margin-left: 45%;
+   margin-top: -10%; 
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color:rgb(119, 87, 87)  ;
+  background-color: rgb(172, 217, 238);
+  }
+
+  .kurumsal h2{  
+    text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+padding-left: 0%;
+margin-bottom: 20px;
+border-bottom: 3px solid black;
+margin-top: -3%;
+} 
+  
+  
+  .kurumsal p{
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 1rem 0;
+  padding-left: 12%;
+  }
+  .kurumsal img{
+margin-left: 12%;
+
+  }
+  
+  
+  
+  
+  
+  .footer .balon h1{
+font-size: 25px;
+position: relative  ;
+right:  450px;
+top:  -20px;
+border-bottom: 2px solid black;
+}
+  .footer .balon p{
+font-size: 16px;
+position: relative  ;
+right:  450px;
+top:  10px;
+
+  }
+
+.footer div{ 
+   
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 40px 490px;
+   
+    padding-bottom: -400px;
+  margin-bottom: -90%;
+  font-size: 13px;
+  
+  color:rgb(0, 0, 0)  ;
+ background-color: rgb(126, 182, 192) ;
+}
+.footer .balon h2{
+  font-size: 25px;
+  position: relative  ;
+left: 400px;
+top: -158px;
+border-bottom: 2px solid black;
+
+}
+.footer .c1{
+  font-size: 15px;
+  position: relative  ;
+  left: 430px;
+top: -120px;
+}
+.footer .c2{
+  font-size: 15px;
+  position: relative  ;
+  left: 353px;
+top: -70px;
+}
+.footer .c3{
+  font-size: 15px;
+  position: relative  ;
+  left: 300px;
+top: -20px;
+}
+.footer .c4{
+  font-size: 15px;
+  position: relative  ;
+  left: 220px;
+top: 30px;
+}
+.footer img{
+  position: relative;
+  left: 130px;
+bottom: 115px;
+
+}
+.iletisimm{
+  background: url(iletisimformu.jpg)no-repeat;
+    height: auto;
+  background-size:  cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: -7.99%;
+  display: flex;
+  align-items: center;
+}
+.iletisim1 {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+ 
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+ 
+#contact h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+ 
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+ 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #79A7A8;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+#contact button[type="submit"]:hover {
+    background: #355C7D;
+    -webkit-transition:  background 0.4s ease-in-out;
+    -moz-transition: background  0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+.iletisim1{
+  margin-right: 60%;
+}
+ .yazi1 p{
+  font-size: 15px;
+padding-left: 5%;
+font-weight: 900;
+padding-top: 5%;
+} 
+.yazi1 h1{
+   
+  font-size: 40px;
+font-weight: 900px;
+padding-left: 6%;
+ 
+display: inline-block;
+padding: 16px 620px;
+  
+ 
+ 
+color:rgb(140, 190, 212)  ;
+background-color: rgb(122, 49, 49);
+margin-top: 4%;
+
+}
+   .aidat1 h1{
+    text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+   position: relative;
+   bottom: 200px;
+left: -90px;
+   margin-bottom: -2px;
+border-bottom: 3px solid rgb(0, 0, 0);
+margin-top: 4%;
+color: rgb(0, 0, 0);
+} 
+.aidat1 h3{
+font-size: 19px;
+ 
+color: rgb(0, 0, 0);
+ position: relative;
+ bottom: 70px;
+right: 380px;
+}
+.aidat1 p{
+   position: relative;
+   right: 600px;
+  color: black;
+     
+  font-size: 14px
+   
+} 
+ .aidat1{   background: url(aidat12.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+
+
+
+
+.kira1{   background: url(kira.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+
+.kira1 h1{
+  text-transform: uppercase;
+color: rgb(0, 0, 0);
+font-size: 35px;
+ position: relative;
+ bottom: 100px;
+ right: 100px;
+border-bottom: 3px solid rgb(3, 3, 3);
+ 
+color: rgb(0, 0, 0);
+}
+ 
+.kira1 p{
+  position: relative;
+  right: 350px; 
+  color: rgb(0, 0, 0);
+   
+  font-size: 14px
+}
+
+
+.butce1{   
+    
+  background: url(butce.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+ 
+}
+
+
+.butce1 h1{
+  text-transform: uppercase;
+color: rgb(10, 10, 10);
+font-size: 35px;
+ position: relative;
+ bottom: 250px;
+margin-bottom: 20px;
+border-bottom: 3px solid rgb(0, 0, 0);
+margin-top: 10%;
+color: rgb(0, 0, 0);
+}
+.butce1 p{
+  position: relative;
+  right: 350px;
+  top: 50px;
+  color: rgb(245, 240, 240);
+   
+  font-size: 14px
+}
+
+
+
+
+
+
+
+
+.temizlik1{   background: url(temizlik12.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+
+.temizlik1 h1{
+  text-transform: uppercase;
+color: rgb(10, 10, 10);
+position: relative;
+bottom: 220px;
+font-size: 35px;
+padding-left: 20%;
+margin-bottom: 20px;
+border-bottom: 3px solid rgb(240, 233, 233);
+margin-top: 10%;
+color: rgb(238, 238, 238);
+}
+.temizlik1 p{
+   position: relative;
+   right: 400px;
+  color: rgb(245, 240, 240);
+   
+  font-size: 16px
+}
+.guvenlik1{    background: url(anasdayf2.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+
+
+.guvenlik1 h1{
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+    position: relative;
+    bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+   margin-top: -12%;
+  color: rgb(0, 0, 0);
+
+
+}
+
+.guvenlik1 p{
+  position: relative;
+  right: 500px;
+
+  padding-left: 10%;
+  color: rgb(7, 6, 6);
+   font-weight: 800;
+  font-size: 16px
+ 
+}
+ 
+.hukuk12{   background: url(hukuk1.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+ 
+.hukuk12 h1{
+  text-transform: uppercase;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin-top: -12%;
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin-top: -12%;
+  color: rgb(0, 0, 0);
+}
+.hukuk12 p{
+
+
+   position: relative;
+   right: 500px;
+  color: rgb(7, 6, 6);
+   font-weight: 800;
+  font-size: 16px
+ 
+}
+
+.personel1{   background: url(anasdayf.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+.personel1 h1{
+  text-transform: uppercase;
+  color: rgb(247, 242, 242);
+  font-size: 35px;
+   position: relative;
+   right: 200px;
+  margin-bottom:  20px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+   margin-top:  -20%;
+  color: rgb(15, 3, 3);
+ 
+}
+.personel1 p{
+
+
+  position: relative;
+   right: 550px;
+   color: rgb(0, 0, 0);
+   font-weight: 800;
+    
+   font-size: 16px
+   
+}
+
+.teknik1{   background: url(teknik12.jpg)no-repeat;
+  background-size:  cover;
+background-position: center;
+min-height: 100vh;
+margin-top:   -11.8rem;
+display: flex;
+align-items: center;
+}
+.teknik1 h1{
+  text-transform: uppercase;
+  color: rgb(192, 212, 73);
+  font-size: 35px;
+   position: relative;
+    bottom: 100px;
+  margin-bottom:  20px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin-top:  -20%;
+  color: rgb(0, 0, 0);
+ 
+}
+.teknik1 p{
+
+
+   
+  color: rgb(0, 0, 0);
+   font-weight: 600;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+   font-size: 16px
+   
+}
+ 
+
+ul {
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+   
+}
+
+li a {
+
+  display: block;
+
+  width: 200px;
+
+  color: rgb(0, 0, 0);
+
+  text-decoration:none;
+position: relative;
+  left: 1100px ;
+bottom:10px ; 
+  font-size: 17px;
+
+}
+.aktif8 {
+  background-color: black;
+border-radius: 7px;
+  color: white;
+}
+.aktif7 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+.aktif6 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+.aktif5 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+.aktif4 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+.aktif3 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+.aktif2 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+.aktif1 {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+}
+
+
+
+
+
+.referans .baslik3 {  
+   text-align: center;
+  text-transform: uppercase;
+color: rgb(0, 0, 0);
+font-size: 35px;
+padding-left: 0%;
+margin-bottom: 20px;
+border-bottom: 3px solid black;
+margin-top: -3%;
+ } 
+ .referans .baslik4{
+padding-top: 1%;
+  text-align: center;
+  text-transform: uppercase;
+color: rgb(0, 0, 0);
+font-size: 35px;
+padding-left: 0%;
+margin-bottom: 20px;
+border-bottom: 3px solid black;
+margin-top: -3%;
+ }
+ .referans img{
+  float: left;
+ padding: 8px;
+}
+.bil1{
+text-align: center;
+
+}
